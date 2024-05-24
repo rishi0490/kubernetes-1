@@ -1,0 +1,2168 @@
+http://bit.ly/2QGHDCh
+
+What is Kubernetes?
+    Container orch tool.
+
+
+
+What is Docker?
+------------------
+Container - Management - tool
+OPEN SOURCE
+FREE
+RELEASE 
+     - Docker CE - FREE
+     - Docker EE - PAID
+     https://www.docker.com/products/docker-enterprise
+
+What is Container?
+---------------------
+
+20 YEARS -----> RUN APP
+================================
+PHYSICAL MACHINE 
+    CPU + RAM + HDD + OS ---> APP
+----------------------------------
+-- 10 USERS -- 1 APP -- 1 PHYSCIAL 
+-- 1000 USERS --- 1 APP --- 10 PHYSICAL MACHINE.
+=================================================
+            - HIGH AVAILABILILITY
+            - SCALIBILYT
+            - Security
+
+=======================================================
+REDUCE A SOFtWARE RUNNING?
+            WASTAGE IN COMPUTING
+1 PHYSICAL
+        1 CPU   --> 15%---80%%%
+        1 RAM
+        1 HDD
+        1 OSS
+-----------------------
+2000 PHYSICAL --- 80%
+==================================
+            VIRUALIZATION
+
+WASTAGE ---- nOT MORE than 15%
+==========================================
+Demo 
+35.154.121.235
+
+How to install docker in RHEL 7.X
+====================================
+https://www.devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
+
+Working with Containers?
+-----------------------
+
+
+Working with Docker Images?
+-------------------------
+
+
+
+Sharing Images
+-------------------
+
+
+
+
+
+
+
+
+What is Kubernetes?
+    Container orch tool.
+
+alexmatt
+ChinmoyPadhi
+ksvijayb
+vijaynathani77
+Ahamedukhan
+anilkpo
+anil1205
+vengam
+vjegadeesan
+babafakruddin476
+revanth-wgl
+VasanthBruce
+imsandeepg
+gkshrikant
+reddyko
+mohapma
+
+What is Docker?
+------------------
+Container - Management - tool
+OPEN SOURCE
+FREE
+RELEASE 
+     - Docker CE - FREE
+     - Docker EE - PAID
+     https://www.docker.com/products/docker-enterprise
+Solomon Hykyes
+Go
+https://www.devopsschool.com/blog/list-of-top-container-runtime-interface-projects/
+
+
+What is Container?
+---------------------
+Container is USER SPACE with 
+                    THEIR OWN 
+                                NET
+                                MNT
+                                PMAP
+                                with a help of Docker....
+                                    Docker takes from KERANL NS.
+                            
+ 47  docker run -d jenkins
+   48  docker ps
+   49  ps -eaf | grep docker
+   50  clear
+   51  ps -eaf | grep docker | wc -l
+   52  docker run -d jenkins
+   53  ps -eaf | grep docker | wc -l
+   54  docker run -d jenkins
+   55  ps -eaf | grep docker | wc -l
+   56  docker ps -a
+   57  ps -eaf
+   58  id
+   59  w
+   60  ps -eaf
+   61  ps
+   62  clear
+   63  docker ps -a
+   64  docker stop 7ad90b1975be de729d521fb6
+   65  docker rm 7ad90b1975be de729d521fb6
+   66  docker ps -a
+   67  clear
+   68  docker ps
+   69  docker inspect ebc043157bd6 | grep -i ip
+   70  docker inspect 36d1d06fd5a6 | grep -i ip
+   71  clear
+   72  docker ps
+   73  docker exec ebc043157bd6 df -kh
+   74  docker exec 36d1d06fd5a6 df -kh
+   75  docker ps
+   76  clear
+   77  docker ps
+   78  docker exec ebc043157bd6 ls /var/jenkins_home
+   79  docker exec 36d1d06fd5a6 ls /var/jenkins_home
+   80  docker exec 36d1d06fd5a6 touch /var/jenkins_home/rajesh.txt
+   81  docker exec 36d1d06fd5a6 ls /var/jenkins_home
+   82  docker exec ebc043157bd6 ls /var/jenkins_home
+   83  clear
+   84  docker ps
+   85  docker exec ebc043157bd6 ps -eaf
+   86  docker exec 36d1d06fd5a6 ps -eaf
+   87  history
+
+
+
+20 YEARS -----> RUN APP
+================================
+PHYSICAL MACHINE 
+    CPU + RAM + HDD + OS ---> APP
+----------------------------------
+-- 10 USERS -- 1 APP -- 1 PHYSCIAL 
+-- 1000 USERS --- 1 APP --- 10 PHYSICAL MACHINE.
+=================================================
+            - HIGH AVAILABILILITY
+            - SCALIBILYT
+            - Security
+
+=======================================================
+REDUCE A SOFtWARE RUNNING?
+            WASTAGE IN COMPUTING
+1 PHYSICAL
+        1 CPU   --> 15%---80%%%
+        1 RAM
+        1 HDD
+        1 OSS
+-----------------------
+2000 PHYSICAL --- 80%
+==================================
+            VIRUALIZATION
+
+WASTAGE ---- nOT MORE than 15%
+==========================================
+Demo 
+35.154.121.235
+
+How to install docker in RHEL 7.X
+====================================
+https://www.devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
+
+Docker----->
+        10+
+
+Docker ARCHITECTURE ----
+Docker Engine
+HUMEN -> DOCKER CLIENT ----REST API----> DOCKER DEAMON --> KERNAL
+
+Working with Containers?
+-----------------------
+create -> start -> stop -> restart -> pause -> unpause -> stop -> delete
+--------------------------------------------------------------------
+------RUN--------
+
+  1  clear
+    2  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    3  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    4  sudo yum install –y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    5  sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
+    6  sudo yum install -y docker-ce
+    7  clear
+    8  which docker
+    9  ps -eaf | grep docker
+   10  sudo systemctl enable docker
+   11  sudo systemctl start docker
+   12  ps -eaf | grep docker
+   13  which docker
+   14  clear
+   15  docker pull jenkins
+   16  clear
+   17  ls
+   18  docker images
+   19  docker ps
+   20  docker ps -a
+   21  docker craete jenkins
+   22  docker create jenkins
+   23  docker ps -a
+   24  clear
+   25  docker ps -a
+   26  docker start d413adb86899
+   27  docker ps
+   28  history
+
+
+  9  docker ps
+   10  docker run -d jenkins
+   11  docker ps
+   12  clear
+   13  docker ps
+   14  clear
+   15  ls
+   16  clear
+   17  docker ps
+   18  docker stop feaaed873de5 5d7351244872 d413adb86899
+   19  docker ps
+   20  docker ps -a
+   21  docker rm feaaed873de5 5d7351244872 d413adb86899
+   22  clear
+   23  docker ps -a
+   24  docker stop 48e2210614dd
+   25  docker ps -a
+   26  docker restart 48e2210614dd
+   27  docker ps -a
+   28  docker pause 48e2210614dd
+   29  docker ps -a
+   30  docker upause 48e2210614dd
+   31  docker unpause 48e2210614dd
+   32  docker ps -a
+   33  clear
+   34  docker ps -a
+   35  docker stop 48e2210614dd
+   36  docker rm 48e2210614dd
+   37  docker ps
+   38  docker ps -a
+   39  docker run -d jenkins
+   40  docker ps
+   41  clear
+   42  ls
+   43  history
+
+
+What you want to see inside a container????
+========================================
+Container --> APP --> Image --> docker hub --> repository --> Docker images.
+
+How to access a container?
+    ----------------------
+    How to get inside?
+            exec - will execute an executables inside a container...
+                                with -it and bash - you can interact wtih
+
+            HOW TO SAFTLY EXIT A CONTAINER?
+                cONTRL + p  + q
+            attach -- Attached to PID 1
+
+    How to access app inside?
+            ssh
+            http
+
+  90  docker ps
+   91  docker exec ebc043157bd6 ls
+   92  docker exec ebc043157bd6 df -kh
+   93  docker exec ebc043157bd6 fdf
+   94  clear
+   95  docker ps
+   96  docker exec -it ebc043157bd6 /bin/bash
+   97  docker ps
+   98  docker exec ebc043157bd6 ps -eaf
+   99  clear
+  100  ls
+  101  docker ps
+  102  docker attach ebc043157bd6
+  103  docker ps
+  104  clear
+  105  docker ps
+  106  ps -eaf
+  107  clear
+  108  docker ps
+  109  docker inspect 36d1d06fd5a6 | grep -i i
+  110  docker ps
+  111  curl http://172.17.0.4:8080
+  112  history
+
+------
+Container is RUNNNING COZ OF PID 1 is running.
+            PID 1 is running coz of yOU.
+            ----------------------------
+            You CAN RUN ANYTHING
+==============================
+Troubleshooting 
+                Container
+                ------------------
+                RUNNING
+                --------------
+                123  docker logs 36d1d06fd5a6
+                124  docker top 36d1d06fd5a6
+                -------------------------------
+            
+
+                NOT RUNNING
+                Docker Image...
+                --------------------
+                CMD
+                ENTRYPOINT
+
+
+
+
+                Docker Engine
+                ---------------
+
+
+Working with Docker Images?
+-------------------------
+    DOCKER IMAGE IS COMBI OF LAYERS
+    LAYERS IS NOTHING BUT FILESYSTEM
+    IN CASE OF CONFLICT - TOP LAYER ALWAYS WIN
+    ALL LAYERS IS RO
+    EXCEPT TOP LAYERS---RW
+
+
+
+Sharing Images
+-------------------
+
+Kubernetes-Tecnotree-Nov-2019
+=============================================
+HUMEN
+    YAML
+        POD
+        RC
+        DEPLOY
+        SVC
+
+Master
+    API server - POD -> Container - Image - G Registry
+    Clustor Store -Etcd - POD -> Container - Image - G Registry
+    Controller manager - POD -> Container - Image - G Registry
+    Schedular - POD -> Container - Image - G Registry
+
+ACT LIKE WORKER...
+    Kubelet
+    Docker
+    Kube proxy - POD -> Container - Image - G Registry
+Worker
+    Kubelet
+    docker
+    Kube proxy
+
+
+MASTEr + WORKER - MINIKUBE
+-------------------------------
+https://github.com/kubernetes/minikube
+A VM
+    MASTEr
+    WORKER
+========================================
+Cloud using PAAS
+==================
+AWS - EKS
+Azure - AKS
+GC - GKE
+-----------------
+k8s in Cloud but without PAAS
+-----------------------------
+KOPS
+    vmware
+    vsph
+    aws
+    gc
+https://github.com/kubernetes/kops
+
+Manual Setup of k8s?
+        Soft way
+            Using KUBEADM
+            https://github.com/kubernetes/kubeadm
+        Hard way 
+        https://github.com/kelseyhightower/kubernetes-the-hard-way
+
+==================================================================
+35.154.143.68
+https://www.devopsschool.com/blog/setting-up-kubernetes-clusters-using-kubeadm-manual-way-in-rhel-7-centos7/
+
+======================================
+- Download 5 Images.
+- Crreate 5 POD - Fill container inside a POD.
+- Config each pod to talk to each other.
+- Certificate works.
+- Config....
+----------------------
+
+To start using your cluster, you need to run the following as a regular user:
+
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+You should now deploy a pod network to the cluster.
+Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+  https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join 172.31.26.152:6443 --token 64gd05.ufomemqd9ic01dpx \
+    --discovery-token-ca-cert-hash sha256:b7ebb37c6ec4a27f6b525c454d14cf6103657b813354b043741879854713f76d
+
+
+How to setup work station? -- DONE
+=================================
+
+MASTER HEALTH
+kubectl cluster-info
+
+VERSION
+kubectl version
+
+PODS...
+kubectl get pods
+kubectl get rc
+kubectl get deploy
+kubectl get nodes
+kubectl get svc
+kubectl get ns
+=================================================================
+Make a Kubernetes healty...
+========================
+
+
+How to setup a worker?
+===============================
+    Kubelet
+    docker
+    Kube proxy
+    Kubeadm
+
+
+ 40  clear
+   41  kubectl get pods --all-namespaces
+   42  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+   43  kubectl get pods --all-namespaces
+   44  kubectl get nodes
+   45  clear
+   46  sudo -s
+   47  kubectl get nodes
+
+
+WORKER
+=============
+13.232.166.116
+=======================================
+How to cleanup
+https://www.devopsschool.com/blog/how-to-delete-remove-clean-existing-corrupted-or-old-kubeadm-kubernetes-clusters-setup/
+
+======================================================
+=======================================================
+How to declare desire in YAML FILE?
+-------------------------------------
+LIST OF RESOURCES?
+        RESOURCE KIND
+        V1
+            METHOD
+
+
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.16/
+
+API-SERVER/GROUP/POD/v1    
+                                    GET
+                                    POST
+                                    DELETE       
+                            alpha
+                            ext
+
+
+   51  clear
+   52  kubectl api-resources
+   53  clear
+   54  kubectl
+   55  kubectl   api-versions   Print the supported API versions on the server, in the form of "group/version"
+   56  kubectl api-versions
+   57  clear
+   58  kubectl
+   59  kubectl config
+   60  clear
+   61  kubectl config
+   62  kubectl config view
+   63  history
+==================================================================
+
+Working with NS
+------------------------------
+Creating a NS
+        CMD
+        YAML
+Explaining a NS FIELD.
+Listing a NS
+Describing a NS
+Editing a NS
+Delete a NS
+
+ 67  kubectl create
+   68  clear
+   69  kubectl create ns dev
+   70  kubectl get ns
+   71  kubectl
+   72  kubectl describe ns dev
+   73  clear
+   74  kubectl describe ns dev
+   75  clear
+   76  kubectl edit ns dev
+   77  clear
+   78  kubectl delete ns dev
+   79  kubectl get ns
+   80  clear
+   81  kubectl craete ns qa
+   82  kubectl create ns qa
+   83  clear
+   84  kubectl describe ns qa
+   85  kubectl edit ns qa
+   86  clear
+   87  kubectl
+   88  clear
+   89  kubectl explain ns
+   90  kubectl explain ns.metadata
+   91  clear
+   92  kubectl explain ns.metadata
+   93  kubectl explain ns
+   94  kubectl explain ns.spec
+   95  clear
+   96  history
+
+
+
+Working with POD
+------------------------------
+Creating a POD
+        CMD - 
+        YAML - 
+
+Explaining a POD FIELD.
+Listing a POD
+Describing a POD
+Editing a POD
+Updating a POD
+----- USING POD -------
+- How to get inside a (Container)
+- How to access a POD?
+- How to see logs of Containers.
+
+Delete a POD
+    CMD
+    YAML
+
+pod.yaml
+-------------
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels: 
+    app: webserver
+spec:
+  containers:
+  - name: hello-ctr
+    image: nginx
+    ports:
+    - containerPort: 80
+
+
+  98  kubectl create
+   99  clear
+  100  kubectl explain pod
+  101  c;ear
+  102  clear
+  103  kubectl explain pod.spec
+  104  kubectl explain pod.spec.containers
+  105  clear
+  106  cf
+  107  ls
+  108  clear
+  109  cd
+  110  ls
+  111  pwd
+  112  vi pod.yaml
+  113  kubectl create
+  114  clear
+  115  kubectl create -f pod.yaml
+  116  kubectl get pod
+  117  kubectl describe pod hello-pod
+  118  clear
+  119  ls
+  120  kubectl edit pod hello-pod
+  121  kubectl describe pod hello-pod
+  122  clear
+  123  ls
+  124* vi
+  125  kubectl create -f pod.yaml
+  126  kubectl apply -f pod.yaml
+  127  kubectl describe pod hello-pod
+  128  clear
+  129  kubectl apply -f pod.yaml
+  130  kubectl apply -f pod.yaml -n=qa
+  131  kubectl get pod
+  132  kubectl get pod --all-namespaces
+  133  clear
+  134  kubectl get pod
+  135* kubectl delete pod h
+  136  kubectl delete pod hello-pod
+  137  kubectl delete -f pod.yaml -n=qa
+  138  history
+
+143  kubeclt get pod
+  144  kubectl get pod
+  145  kubectl create -f pod.yaml
+  146  kubectl get pod
+  147  clear
+  148  kubectl get pod
+  149  clear
+  150  kubectl get pod -o wide
+  151  kubectl exec
+  152  kubectl help exec
+  153  clear
+  154  kubectl get pod
+  155  kubectl exec -it hello-pod /bin/bash
+  156  kubectl attach hello-pod
+  157  kubectl get pod
+  158  kubectl describe pod hello-pod
+  159  clear
+  160  ls
+  161  kubectl logs hello-pod
+  162  kubectl get pod -o wide
+  163  curl http://10.44.0.1
+  164  kubectl get pod -o wide
+  165  kubectl logs hello-pod
+  166  curl http://10.44.0.1
+  167  kubectl logs hello-pod
+  168  curl http://10.44.0.1
+  169  kubectl logs hello-pod
+  170  kubectl
+  171  history
+
+
+
+
+
+
+
+Creating a RC
+        CMD - 
+        YAML - 
+
+Explaining a RC FIELD.
+Listing a RC
+Describing a RC
+Editing a RC
+Updating a RC
+----- USING RC -------
+Replication
+Controller 
+
+Delete a RC
+    CMD
+    YAML
+
+
+rc.yaml
+===========================
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: hello-rc
+spec:
+  replicas: 2   
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-ctr
+        image: nginx
+        ports:
+        - containerPort: 80
+
+  175  kubectl create
+  176  clear
+  177  vi.yaml
+  178  vi rc.yaml
+  179  kubectl craete -f rc.yaml
+  180  kubectl create -f rc.yaml
+  181  clear
+  182  kubectl get pod
+  183  kubectl explain rc
+  184  kubectl explain rc.spec
+  185  kubectl explain rc.spec.template
+  186  kubectl get rc
+  187  clear
+  188  kubectl get rc
+  189  kubectl describe rc hello-rc
+  190  clear
+  191  ls
+  192  kubectl edit rc hello-rc
+  193  kubectl get pod
+  194  clear
+  195  kubectl get pod
+  196  vi rc.yaml
+  197  kubectl apply -f rc.yaml
+  198  kubectl get pod
+  199  clear
+  200  kubectl get pod
+  201  clear
+  202  kubectl get pod
+  203  clear
+  204  kubectl get pod
+  205  clear
+  206  kubectl get pod
+  207  kubectl delete pod hello-rc-65mtc
+  208  kubectl get pod
+  209  clear
+  210  ls
+  211  kubectl
+  212  clear
+  213  kubectl scale
+  214  clear
+  215  kubectl scale --replicas=20 rc/hello-rc
+  216  kubectl get pod
+  217  clear
+  218  kubectl get pod
+  219  clear
+  220  kubectl get pod
+  221  clear
+  222  kubectl get pod
+  223  history
+==========================================================================
+Deployment
+--------------------
+    RC+ == AKA REplicasets
+    rollout
+    rollback
+    versioned
+=========================
+Creating a DEPLOYMENT
+        CMD - 
+        $ kubectl create deployment my-dep --image=nginx
+        YAML - 
+
+Explaining a DEPLOYMENT FIELD.
+Listing a DEPLOYMENT
+Describing a DEPLOYMENT
+Editing a DEPLOYMENT
+Updating a DEPLOYMENT
+----- USING DEPLOYMENT -------
+Replication
+Controller 
+
+Delete a DEPLOYMENT
+    CMD
+    YAML
+
+my-dep-6589b6f7dc-blrnm       1/1     Running   0          19m
+my-dep-6589b6f7dc-dggrk       1/1     Running   0          19m
+my-dep-6589b6f7dc-f9smk       1/1     Running   0          19m
+my-dep-6589b6f7dc-g8k9q       1/1     Running   0          19m
+my-dep-6589b6f7dc-mztc5
+
+DEPLOY nginx
+RS - nginx
+
+Image
+scmgalaxy/nginx-devopsschoolv1
+scmgalaxy/nginx-devopsschoolv2
+
+ 226  kubectl delere rc hello-rc
+  227  clear]
+  228  kubectl delete rc hello-rc
+  229  clear
+  230  kubectl get pods
+  231  clear
+  232  kubectl get pods
+  233  clear
+  234  kubectl creare
+  235  kubectl create
+  236  clear
+  237  kubectl help create
+  238  kubectl help create deployment
+  239  clear
+  240  kubectl get deploy
+  241  kubectl create deployment my-dep --image=nginx
+  242  kubectl get deploy
+  243  clear
+  244  ls
+  245  kubectl get deploy
+  246  kubectl get pods
+  247  kubectl explain deploy
+  248  kubectl explain deploy.spec
+  249  kubectl explain deploy.spec.template
+  250  kubectl explain deploy.spec.template.spec
+  251  kubectl explain deploy.spec.template.spec.containers
+  252  clear
+  253  kubectl get deploy
+  254  kubectl describe deploy my-dep
+  255  CLEAR
+  256  clear
+  257  kubectl edit deploy my-dep
+  258  kubectl get pods
+  259  clear
+  260  kubectl get deploy
+  261  clear
+  262  kubectl
+  263  clear
+  264  kubectl get
+  265  kubectl help get
+  266  kubectl get deploy my-dep -o yaml
+  267  kubectl help get
+  268  kubectl get deploy my-dep -o yaml
+  269  kubectl help get
+  270  kubectl help get | grep export
+  271  kubectl get deploy my-dep -o yaml --export
+  272  clear
+  273  kubectl get deploy my-dep -o yaml --export
+  274  clear
+  275  kubectl get deploy my-dep -o yaml --export >> dep.yaml
+  276  ls
+  277  more dep.yaml
+  278  clear
+  279  vi dep.yaml
+  280  clear
+  281  kubectl create -f dep.yaml
+  282  kubectl get deploy
+  283  clear
+  284  kubectl get pods
+  285  kubectl describe pod my-jenkins-659c78496f-4xh4p
+  286  clear
+  287  kubectl get deploy
+  288  kubectl get pod
+  289  kubectl delete pod my-jenkins-659c78496f-dw6zr
+  290  kubectl get pod
+  291  clear
+  292  kubectl get deploy
+  293  kubectl describe deploy my-je
+  294  kubectl get rs
+  295  clear
+  296  ls
+  297  kubectl craete -f rc.yaml
+  298  vi rc.yaml
+  299  kubectl create -f rc.yaml
+  300  kubectl get pod
+  301  kubectl edit pod hello-rc-2rnc4
+  302  kubectl get pod
+  303  clear
+  304  kubectl get pod
+  305  kubectl describe pod hello-rc-2rnc4
+  306  kubectl get pod -o wide
+  307  curl http://10.44.0.9:8080
+  308  clear
+  309  ls
+  310  clear
+  311  ls
+  312  kubectl get pod
+  313  kubectl edit pod my-dep-6589b6f7dc-mztc5
+  314  kubectl get pod
+  315  clear
+  316  kubectl get pod
+  317  clear
+  318  kubectl get pod
+  319  kubectl get deploy
+  320  kubectl describe pod my-dep
+  321  clear
+  322  kubectl get pod
+  323  kubectl describe pod my-dep-6589b6f7dc-blrnm
+  324  kubectl get pod
+  325  clear
+  326  kubectl describe pod my-dep-6589b6f7dc-blrnm
+  327  kubectl describe my-dep-6589b6f7dc-dggrk
+  328  kubectl describe pod my-dep-6589b6f7dc-dggrk
+  329  kubectl describe pod my-dep-6589b6f7dc-f9smk
+  330  clear
+  331  kubectl get pod
+  332  kubectl describe pod my-dep-6589b6f7dc-g8k9q
+  333  kubectl describe pod my-dep-6589b6f7dc-mztc5
+  334  clear
+  335  kubectl get deploy
+  336  kubectl edit deploy my-dep
+  337  clear
+  338*
+  339  kubectl get rs
+  340  kubectl edit rs my-dep-6589b6f7dc
+  341  clear
+  342  kubectl get delpy
+  343  kubectl get deploy
+  344  kubectl describe deploy my-dep
+  345  clear
+  346  kubectl get pods
+  347  clear
+  348  ls
+  349  history
+  350  clear
+  351  kubectl get pods
+  352  history
+  353  clear
+  354  ls
+  355  kubectl get deploy
+  356  kubectl delete deploy my-dep my-jenkins
+  357  clear
+  358  kubectl get deploy
+  359  kubectl get pods
+  360  kubectl delete rc hello-rc
+  361  clear
+  362  kubectl delete pod hellopod
+  363  kubectl delete pod hello-pod
+  364  clear
+  365  kubectl get pod
+  366  clear
+  367  ls
+  368  vi dep.yaml
+  369  clear
+  370  ls
+  371  kubectl apply -f dep.yaml
+  372  kubectl get pod -o wide
+  373  clear
+  374  kubectl get pod -o wide
+  375  clear
+  376  kubectl get pod -o wide
+  377  clear
+  378  ls
+  379  kubectl get pod -o wide
+  380  curl http://10.44.0.2
+  381  clear
+  382  kubectl
+  383  kubectl rollout
+  384  kubectl rollout history deploy my-jenkins
+  385  cler
+  386  vi dep.yaml
+  387  clear
+  388  kubectl apply -f dep.yaml
+  389  kubectl rollout history deploy my-jenkins
+  390  kubectl get pod -o wide
+  391  clear
+  392  kubectl get pod -o wide
+  393  curl http://10.44.0.1
+  394  curl http://10.44.0.3
+  395  kubectl rollout history deploy my-jenkins
+  396  curl http://10.44.0.1
+  397  kubectl rollout
+  398  kubectl rollout undo
+  399  history
+  400  kubectl help rollout undo
+  401  kubectl rollout undo deploy/my-jenkins --to-revision=1
+  402  kubectl get pod -o wide
+  403  clear
+  404  kubectl get pod -o wide
+  405  clear
+  406  kubectl get pod -o wide
+  407  curl http://10.44.0.1
+  408  curl http://10.44.0.2
+  409  clear
+  410  curl http://10.44.0.2
+  411  history
+
+
+WORKING WITH labels
+===================================
+Apply a label
+See a labels
+Edit a label
+Query a label
+
+
+kubectl label pods foo unhealthy=true
+kubectl label --overwrite pods foo status=unhealthy
+kubectl label pods --all status=unhealthy
+kubectl label pods foo bar-
+reference
+https://www.devopsschool.com/blog/working-with-kubernetes-cluster-using-kubectl-part-7-labels/
+
+
+kubectl label pods my-jenkins-788b58b48-25rh7 name=dbserver
+kubectl label --overwrite pods my-jenkins-788b58b48-25rh7 name=jenkinsserver
+kubectl label pods --all status=unhealthy
+kubectl label pods my-jenkins-788b58b48-25rh7 name-
+kubectl label pods --all app-
+kubectl delete pod -l status=unhealthy
+
+
+==================WORKING WITH SVC================================
+
+kubectl label pods --all app-
+
+Create 
+    CMD
+    yaml
+
+kubectl create service  clusterip svc1 --tcp=8080:80
+kubectl label --overwrite pods hello-pod app=svc2
+kubectl label --overwrite pods hello-pod1 app=svc2
+
+ 500  kubectl create -f pod.yaml
+  501  clear
+  502  kubectl get pod
+  503  kubectl get pod --show-label
+  504  kubectl get pod --show-lable
+  505  kubectl get pod --show-labels
+  506  clear
+  507  kubectl get pod --show-labels
+  508  clear
+  509  kubectl label pods --all app-
+  510  kubectl get pod --show-labels
+  511  clear
+  512  ls
+  513  clear
+  514  ls
+  515  kubectl create
+  516  clear
+  517  kubectl create service
+  518  kubectl create service
+  519  clear
+  520  kubectl create service  clusterip
+  521  kubectl create service  clusterip svc1
+  522  kubectl help create service
+  523  kubectl help create service clusterip
+  524  clear
+  525  kubectl get pod
+  526  kubectl get pod -o wide
+  527  curl http://10.44.0.1
+  528  clear
+  529  ls
+  530  kubectl create service  clusterip svc1 --tcp=8080:80
+  531  kubectl get svc
+  532  kubectl get svc --show-lables
+  533  kubectl get svc --show-labels
+  534  clear
+  535  kubectl get svc --show-labels
+  536  curl http://10.98.191.0
+  537  kubectl describe svc svc1
+  538  kubectl describe pod hello-pod --show-labels
+  539  kubectl describe svc svc1
+  540  kubectl get pod hello-pod --show-labels
+  541  curl http://10.98.191.0
+  542  kubectl label pods hello-pod app=svc1
+  543  kubectl get pod hello-pod --show-labels
+  544  kubectl describe svc svc1
+  545  curl http://10.98.191.0
+  546  curl http://10.98.191.0:8080
+  547  cp pod.yaml pod1.yaml
+  548  vi pod1.yaml
+  549  kubectl create -f pod1.yaml
+  550  kubectl get pod
+  551  kubectl get pod -o wide
+  552  curl http://10.44.0.2
+  553  curl http://10.44.0.1
+  554  clear
+  555  ls
+  556  kubectl get pod -o wide
+  557  kubectl edit pod hello-pod1
+  558  kubectl get pod -o wide --show-labels
+  559  kubectl get svc
+  560  curl http://10.98.191.0
+  561  curl http://10.98.191.0:8080
+  562  clear
+  563  kubectl describe svc svc1
+  564  kubectl edit svc svc1
+  565  cler
+  566  clear
+  567  kubectl describe svc svc1
+  568  clear
+  569  kubectl label pods hello-pod app=svc2
+  570  kubectl label --overwrite pods hello-pod app=svc2
+  571  kubectl label --overwrite pods hello-pod1 app=svc2
+  572  kubectl describe svc svc1
+  573  history
+  574  clear
+  575  kubectget svc
+  576  kubect get svc
+  577  kubectl get svc
+  578  kubect get svc
+  579  history
+
+
+kubectl create service  clusterip svc2 --tcp=8080:80 --tcp=8090:80
+kubectl create service nodeport my-ns --tcp=5678:8080
+
+
+
+app=my-ns
+
+kubectl label --overwrite pods hello-pod app=my-ns
+kubectl label --overwrite pods hello-pod1 app=my-ns
+
+52.66.196.197:30922 
+15.206.179.14:30922
+
+427  kubectl create service nodeport my-ns --tcp=5678:8080
+  428  kubectl get svc
+  429  kubectl get svc --show-lables
+  430  kubectl get svc --show-labels
+  431  clear
+  432  kubectl get svc --show-labels
+  433  kubectl edit svc my-ns
+  434  kubectl get svc --show-labels
+  435  kubectl edit svc my-ns
+  436  kubectl get pod
+  437  kubectl delete deploy my-jenkins
+  438  clear
+  439  kubectl get pod
+  440  kubectl get pod --show-labels
+  441  clear
+  442  kubectl label --overwrite pods hello-pod app=my-ns
+  443  kubectl label --overwrite pods hello-pod1 app=my-ns
+  444  clear
+  445  kubectl get pod --show-labels
+  446  kubectl edit svc my-ns
+  447  clear
+  448  ls
+  449  kubectl get svc
+  450  curl http://10.102.172.232:5678
+  451  clear
+  452  ls
+  453  kubectl get svc
+
+
+
+raj-875748690.ap-south-1.elb.amazonaws.com
+
+tectree.k8.rajeshkumar.xyz
+
+kubectl create service loadbalancer my-lbs --tcp=5678:80
+
+  450  curl http://10.102.172.232:5678
+  451  clear
+  452  ls
+  453  kubectl get svc
+  454  history
+  455  clear
+  456  kubectl help create service
+  457  kubectl help create service loadbalancer
+  458  clear
+  459  kubectl create service loadbalancer my-lbs --tcp=5678:80
+  460  kubectl get svc
+  461  kubectl describe svc my-lbs
+  462  history
+  463  kubectl create service
+  464  history
+
+--------------------------------
+POD PROBES
+=========================
+Readiness
+https://www.devopsschool.com/blog/how-to-check-containers-readiness-inside-a-pod-using-readinessprobe/
+
+Liveness
+https://www.devopsschool.com/blog/how-to-check-containers-health-inside-a-kubernetes-pod-using-livenessprobe/
+
+
+Making Node accepting Pods ---- TAINT
+https://www.devopsschool.com/blog/working-with-kubernetes-cluster-using-kubectl-part-1/
+
+
+kubectl taint node ip-172-31-26-152.ap-south-1.compute.internal node-role.kubernetes.io/master:NoSchedule-
+
+\
+kubectl delete deploy my-jenkins --grace-period=0 --force --namespace default
+
+kubectl delete pod * --grace-period=0
+
+for p in $(kubectl get pods | grep Terminating | awk '{print $1}'); do kubectl delete pod $p --grace-period=0 --force;done
+
+
+---------------------------------
+
+Taints
+kubectl taint node ip-172-31-7-7.ap-south-1.compute.internal node.kubernetes.io/unreachable:NoSchedule-
+kubectl taint node ip-172-31-7-7.ap-south-1.compute.internal nnode.kubernetes.io/unreachable:NoExecute-
+
+kubectl uncordon ip-172-31-7-7.ap-south-1.compute.internal
+
+kubectl patch node ip-172-31-7-7.ap-south-1.compute.internal -p '{"spec":{"Taints":[]}}'
+
+https://stackoverflow.com/questions/35453792/pods-stuck-in-terminating-status
+====QA===========
+Image of POD(Part of Deployment got changed but PODS still remain same.
+externalname Create an ExternalName service.
+headless service.
+
+
+kubectl drain ip-172-31-7-7.ap-south-1.compute.internal --force
+
+kubectl drain ip-172-31-7-7.ap-south-1.compute.internal --ignore-daemonsets --force --delete-local-data
+
+  625  kubectl drain ip-172-31-7-7.ap-south-1.compute.internal --force
+  626  kubectl get pod -o wide
+  627  kubectl get nodes
+  628  kubectl get pod -o wide
+  629  clear
+  630  ls
+  631  kubectl get pod -o wide
+  632  clear
+  633  kubectl drain ip-172-31-7-7.ap-south-1.compute.internal --ignore-daemonsets --force --delete-local-data
+
+
+================LAB============================
+1. How this work? 
+  kubernetes service.
+2. Taints
+3. drain
+4. readiness
+5 Liviness
+6. 
+
+============================================
+Docker and Kubernetes Volume
+================================================
+TYPES OF VOLUME in DOCKER
+    - volume
+    - mount
+    - memory
+    https://www.devopsschool.com/blog/understand-docker-volume-from-beginner-to-deep-dive-level/
+
+ 46  clear
+   47  docker ps
+   48  docker run -it --name=rajesh ubuntu /bin/bash
+   49  docker ps -a
+   50  docker attach 5b491ead7202
+   51  cd /var/lib/docker
+   52  clear
+   53  ls
+   54  cd overlay2/
+   55  clear
+   56  ls
+   57  find . -name rajesh.txt
+   58  clear
+   59  docker ps -a
+   60  docker stop 5b491ead7202
+   61  docker rm 5b491ead7202
+   62  clear
+   63  find . -name rajesh.txt
+   64  clear
+   65  cd ..
+   66  ls
+   67  cd volumes
+   68  clear
+   69  ls
+   70  docker volume
+   71  docker volume ls
+   72  clear
+   73  docker volume ls
+   74  docker volume craete rajesh
+   75  ls
+   76  docker volume create rajesh
+   77  clear
+   78  docker volume ls
+   79  ls
+   80  cd rajesh/
+   81  ls
+   82  clear
+   83  cd _data/
+   84  ls
+   85  cd ..
+   86  ls
+   87  docker run -itd -v rajesh:/opt/rajesh ubuntu /bin/bash
+   88  docker attach 1e0e2634c01ddb3490a2266a6dc2dbc4dc000ac16a158d79de2237ce5ce96ac7
+   89  docker stop 1e0e2634c01ddb3490a2266a6dc2dbc4dc000ac16a158d79de2237ce5ce96ac7
+   90  docker rm1e0e2634c01ddb3490a2266a6dc2dbc4dc000ac16a158d79de2237ce5ce96ac7
+   91  docker rm 1e0e2634c01ddb3490a2266a6dc2dbc4dc000ac16a158d79de2237ce5ce96ac7
+   92  clear
+   93  pwd
+   94  ls
+   95  cd _data/
+   96  ls
+   97  clear
+   98  ls
+   99  docker run -itd -v rajesh:/opt/rajesh ubuntu /bin/bash
+  100  docke attach abfd978834f20d9db497c53d9f8a0e469cd41a29de4e36096f28ca0420c4c4a5
+  101  docker attach abfd978834f20d9db497c53d9f8a0e469cd41a29de4e36096f28ca0420c4c4a5
+  102  clear
+  103  docker stop abfd978834f20d9db497c53d9f8a0e469cd41a29de4e36096f28ca0420c4c4a5
+  104  docker rm abfd978834f20d9db497c53d9f8a0e469cd41a29de4e36096f28ca0420c4c4a5
+  105  clear
+  106  ls
+  107  cd ..
+  108  ls
+  109  cd ..
+  110  ls
+  111  pwd
+  112  clear
+  113  cd /opt/
+  114  ls
+  115  mkdir backup
+  116  cd backup/
+  117  pwd
+  118  docker run -it -v /opt/backup:/opt/raju ubuntu
+  119  clear
+  120  ls
+  121  touch file2.txt
+  122  ls
+  123  docker ps
+  124  docker attach 271ffa0638c6
+  125  docker stop 271ffa0638c6
+  126  docker rm  271ffa0638c6
+  127  cd /opt/
+  128  ls
+  129  cd backup/
+  130  ls
+  131  history
+
+============================================
+1. LMS
+2. What would be the next topic
+
+Day 4-
+========================
+Storage
+Networking
+Day 5-
+
+EMPTYDIR
+==========================================
+https://www.devopsschool.com/blog/kubernetes-volume-emptydir-explained-with-examples/
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: scmgalaxy/nginx-devopsschoolv1
+    name: test-container
+    volumeMounts:
+    - mountPath: /cache
+      name: cache-volume
+  volumes:
+  - name: cache-volume
+    emptyDir: {}
+
+==============hostpath==================
+https://www.devopsschool.com/blog/kubernetes-volume-hostpath-explained-with-examples/
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: scmgalaxy/nginx-devopsschoolv1
+    name: test-container
+    volumeMounts:
+    - mountPath: /test-pd
+      name: test-volume
+  volumes:
+  - name: test-volume
+    hostPath:
+      # directory location on host
+      path: /data
+      # this field is optional
+      type: DirectoryOrCreate
+
+=====================nfs==============================
+
+
+UBUNTU - 
+https://www.devopsschool.com/tutorial/kubernetes/labs/lab-9-kubernetes-configMaps-secrets.html
+
+
+Setup a NFS server in rhel 7.X
+======================
+https://www.thegeekdiary.com/centos-rhel-7-configuring-an-nfs-server-and-nfs-client/
+
+ 159  yum update
+  160  rpm -qa | grep nfs-utils
+  161  yum install nfs-utils rpcbind
+  162  systemctl enable nfs-server
+  163  systemctl enable rpcbind
+  164  systemctl enable nfs-lock
+  165  systemctl enable nfs-idmap
+  166  systemctl start rpcbind
+  167  systemctl start nfs-server
+  168  systemctl start nfs-lock
+  169  systemctl start nfs-idmap
+  170  systemctl status nfs
+  171  mkdir /tecnotree
+  chmod 1777 /tecnotree
+  172  vi /etc/exports
+        ------------------
+        /tecnotree *(rw)
+
+  173  exportfs -r
+  174  systemctl restart nfs-server
+  showmount -e 
+  175  history
+
+-----------client setup-----------
+rpm -qa | grep nfs-utils
+yum install nfs-utils
+mkdir /tmp/mylocal
+sudo mount -t nfs -o ro,nosuid 172.31.26.152:/tecnotree /tmp/mylocal
+mkdir /tmp/mylocal1
+sudo mount -t nfs -o rw,nosuid 172.31.26.152:/tecnotree /tmp/mylocal1
+vi /etc/fstab
+172.31.26.152:/tecnotree 	/tmp/mylocal	 nfs 	ro,nosuid 	0 	0
+172.31.26.152:/tecnotree 	/tmp/mylocal1	 nfs 	rw,nosuid 	0 	0
+
+
+
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nfs-in-a-pod
+spec:
+  containers:
+    - name: app
+      image: scmgalaxy/nginx-devopsschoolv1
+      volumeMounts:
+        - name: nfs-volume
+          mountPath: /tmp/mylocal1 # Please change the destination you like the share to be mounted too
+  volumes:
+    - name: nfs-volume
+      nfs:
+        server: 172.31.26.152 # Please change this to your NFS server
+        path: /tecnotree # Please change this to the relevant share
+
+
+PV and PVC
+-------------------
+https://www.devopsschool.com/blog/persistentvolume-persistentvolumeclaim-volumes-using-hostpath/
+
+What happens if already used PVC is being used in another pOD?
+---
+
+What happens when you use PVC with same spec again with new PV?
+[ec2-user@ip-172-31-26-152 ~]$ kubectl get pvc
+NAME           STATUS    VOLUME     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+pvchostpath    Bound     hostpath   1Gi        RWO            manual         8m6s
+pvchostpath1   Pending                                        manual         6s
+[ec2-user@ip-172-31-26-152 ~]$ kubectl get pv
+NAME       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                 STORAGECLASS   REASON   AGE
+hostpath   1Gi        RWO            Retain           Bound    default/pvchostpath   manual                  9m59s
+
+
+kind: Pod
+apiVersion: v1
+metadata:
+  name: task-pv-pod1
+spec:
+  containers:
+    - name: task-pv-container
+      image: scmgalaxy/nginx-devopsschoolv1
+      ports:
+        - containerPort: 80
+          name: "http-server"
+      volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: task-pv-storage
+  volumes:
+    - name: task-pv-storage
+      persistentVolumeClaim:
+        claimName: pvchostpath
+
+ 972  kubectl create -f pv.yaml
+  973  kubectl get pv
+  974  clear
+  975  ls
+  976  kubectl get pvc
+  977  vi pvc.yaml
+  978  kubectl create -f pvc.yaml
+  979  vi pvc.yaml
+  980  kubectl create -f pvc.yaml
+  981  clear
+  982  kubectl get pvc
+  983  kubectl get pv
+  984  cd /tmp/devopsschool/
+  985  ls
+  986  vi pvcpod.yaml
+  987  kubectl create -f pvcpod.yaml
+  988  kubectl get pod
+  989  kubectl get pv
+  990  kubectl get pvc
+  991  kubectl exec -it task-pv-pod /bin/bash
+  992  kubectl get pod -o wide
+  993  curl http://10.32.0.4
+  994  pwd
+  995  ls
+  996  clear
+  997  cd
+  998  ls
+  999  vi pvcpod2.yaml
+ 1000  kubectl create -f pvcpod2.yaml
+ 1001  kubectl get pod
+ 1002  kubectl get pod -o
+ 1003  clear
+ 1004  kubectl get pod -o wide
+ 1005  curl http://10.32.0.4
+ 1006  curl http://10.32.0.5
+ 1007  clear
+ 1008  ls
+ 1009  cp pvc.yaml pvc1.yaml
+ 1010  vi pvc1.yaml
+ 1011  kubectl create -f pvc1.yaml
+ 1012  kubectl get pvc
+ 1013  kubectl get pv
+ 1014  clear
+ 1015  ls
+ 1016  cp pv.yaml pv1.yaml
+ 1017  cp pv.yaml pv2.yaml
+ 1018  vi pv1.yaml
+ 1019  vi pv1.yaml
+ 1020  vi pv1.yaml
+ 1021  kubectl create -f pv1.yaml
+ 1022  kubectl get pv
+ 1023  clear
+ 1024  kubectl get pv
+ 1025  kubectl get pvc
+ 1026  kubectl get pv
+ 1027  clear
+ 1028  kubectl get pv
+ 1029  kubectl get pvc
+ 1030  ls
+ 1031  cp pvc1.yaml pvc2.yaml
+ 1032  vi pvc2.yaml
+ 1033  kubectl describe pvc pvchostpath1
+ 1034  clear
+ 1035  ls
+ 1036  kubectl describe pvc
+ 1037  clear
+ 1038  kubectl get pv
+ 1039  kubectl get pvc
+ 1040  ls
+ 1041  kubectl create -f pvc2.yaml
+ 1042  kubectl get pvc
+ 1043  kubectl get pv
+ 1044  kubectl get pvc
+ 1045  kubectl get pv
+ 1046  kubectl get pvc
+ 1047  ls
+ 1048  vi pv.yaml
+ 1049  kubectl get pv
+ 1050  vi pv.yaml
+ 1051  kubectl apply -f pv
+ 1052  kubectl apply -f pv.yaml
+ 1053  kubectl get pv
+ 1054  kubectl get pvc
+ 1055  ls
+ 1056  vi pvc.yaml
+ 1057  kubectl apply -f pvc.yaml
+ 1058  kubectl apply -f pvc.yaml clear
+=======================================
+configMaps
+====================================
+----------
+server {
+    listen       80;
+    server_name  localhost;
+
+    location / {
+        proxy_bind 127.0.0.1;
+        proxy_pass http://127.0.0.1:3000;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+---------------------
+kubectl create configmap my-config --from-file=reverseproxy.conf
+kubectl get cm
+kubectl describe cm my-config
+
+----------------------
+apiVersion: v1
+kind: Pod
+metadata:
+  name: helloworld-nginx
+  labels:
+    app: helloworld-nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.11
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/nginx/conf.d
+  - name: k8s-demo
+    image: wardviaene/k8s-demo
+    ports:
+    - containerPort: 3000
+  volumes:
+    - name: config-volume
+      configMap:
+        name: my-config
+        items:
+        - key: reverseproxy.conf
+          path: myconfo.conf
+
+-------------------------
+kubectl exec -it helloworld-nginx /bin/bash
+cd /etc/nginx/conf.d
+
+==========================================
+secrets
+-----------
+https://www.devopsschool.com/tutorial/kubernetes/kubernetes-resource-objects/secrets-example-programs.html
+
+
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysecret
+type: Opaque
+data:
+  username: YWRtaW4=
+  password: MWYyZDFlMmU2N2Rm
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+  - name: mypod
+    image: scmgalaxy/nginx-devopsschoolv1
+    volumeMounts:
+    - name: foo
+      mountPath: "/etc/foo"
+      readOnly: true
+  volumes:
+  - name: foo
+    secret:
+      secretName: mysecret
+
+
+Networking
+================================
+- bridge
+    172.17.0.0/16
+        172.17.0.2
+
+br-629951485ae0  - dev
+172.18.0.0/16
+      172.18.0.2
+
+- host
+- none
+=============================================================================
+=============================================================================
+QA
+=============================================================================
+Authentication and Authorization with K8s.
+
+Authentication
+    Certificates
+
+Authorization
+    ABAC
+    RBAC - Certificates to Authenticate
+           Roles to Authorize
+================================================
+TYPES of USERS
+    - NORMAL USERS - 
+          using certificates    
+          This use has no api resources 
+          For humen interaction with API Server         
+    - SERVICE ACCOUNT 
+          - Secret Tokens
+          - This can be created using api resources
+          - For KUBERNETES Control plane internal authentication and Auth.
+
+Types of roles on RBAC?
+    - Roles
+        - Limited to Namespace
+        - Humen
+        - rules
+    - clusterroles
+        - Scope to ClustorWIde.
+        - Clustor Releated Access.\
+            - Can add humen.
+        - rules
+            apiGroups
+            resourceNames
+            resources
+            verbs
+               - create
+                - get
+                - delete
+                - list
+                - update
+                - edit
+                - watch
+                - exec
+
+
+Demo 1 - 
+          Create a SERVice ACCOUNT    == ServiceAccount
+
+          Create clusterroles         == ClusterRole
+          Add SERVice ACCOUNT into clusterroles = ClusterRoleBinding
+
+kubectl create sa tecnotree-sa
+kubectl get sa -A | grep tec
+
+sa.yaml
+---------------
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: tecnotree-admin
+
+kubectl create -f sa.yaml
+kubectl get sa -A | grep tec
+kubectl get secrets
+
+
+
+
+
+kubectl help create clusterrole
+kubectl create clusterrole tecnotree-clusterroles1 --verb=get,list,watch --resource=pods
+kubectl get clusterrole
+kubectl describe clusterrole tecnotree-clusterroles1
+
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  namespace: default
+  name: tecnotree-clusterroles2
+rules:
+- apiGroups: ["", "extensions", "apps"]
+  resources: ["deployments", "replicasets", "pods"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"] # You can also use ["*"]
+
+
+
+kubectl create clusterrolebinding tecnotree-cr-binding --clusterrole=tecnotree-clusterroles2 --user=tecnotree-admin
+kubectl get clusterrolebinding
+kubectl get clusterrolebinding | grep tec
+
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: tecnotree-cr-binding3
+subjects:
+- kind: ServiceAccount
+  name: tecnotree-admin
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: tecnotree-clusterroles2
+  apiGroup: rbac.authorization.k8s.io
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: tecnotree-cr-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: tecnotree-clusterroles2
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: tecnotree-admin
+
+
+=========================
+kubectl convert -f pod.yaml
+kubectl convert -f pod.yaml --local -o json
+kubectl convert -f . | kubectl create -f -
+
+
+--------------------------------
+subjects:
+- kind: User
+  name: example-user
+  apiGroup: rbac.authorization.k8s.io
+
+subjects.kinds CAN BE 
+          User
+          Group
+          ServiceAccount
+
+Demo 2 
+          Create a normal Account - NA
+          Create a roles = Role
+          Add Normal ACCOUNT into roles = RoleBinding
+
+
+      
+======USER At LAPTOP==================
+kubectl create namespace office
+
+openssl genrsa -out employee.key 2048
+
+openssl req -new -key employee.key -out employee.csr -subj "/CN=employee/O=bitnami"
+
+======ADMIN AT MASTER using root==================
+openssl x509 -req -in employee.csr -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out /home/ec2-user/tecnotree/employee.crt -days 500
+
+======USER At LAPTOP==================
+kubectl config set-credentials employee --client-certificate=/home/ec2-user/tecnotree/employee.crt  --client-key=/home/ec2-user/tecnotree/employee.key
+
+kubectl config set-context employee-context --cluster=kubernetes --namespace=office --user=employee
+
+kubectl --context=employee-context get pods
+
+==========================================
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  namespace: office
+  name: deployment-manager
+rules:
+- apiGroups: ["", "extensions", "apps"]
+  resources: ["deployments", "replicasets", "pods"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"] # You can also use ["*"]
+
+==================================
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: deployment-manager-binding
+  namespace: office
+subjects:
+- kind: User
+  name: employee
+  apiGroup: ""
+roleRef:
+  kind: Role
+  name: deployment-manager
+  apiGroup: ""
+
+============================
+$ kubectl --context=employee-context run nginx --image=nginx
+$ kubectl --context=employee-context get pods
+
+
+Statefulsets...
+- pod name 
+- order
+- sticky to pvc
+============================
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv0001 
+spec:
+  capacity:
+    storage: 1Gi 
+  accessModes:
+  - ReadWriteOnce 
+  nfs: 
+    path: /tecnotree/pv0001
+    server: 172.31.14.69 
+  persistentVolumeReclaimPolicy: Recycle
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv0002
+spec:
+  capacity:
+    storage: 1Gi 
+  accessModes:
+  - ReadWriteOnce 
+  nfs: 
+    path: /tecnotree/pv0002
+    server: 172.31.14.69 
+  persistentVolumeReclaimPolicy: Recycle
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  serviceName: "nginx"
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: k8s.gcr.io/nginx-slim:0.8
+        ports:
+        - containerPort: 80
+          name: web
+        volumeMounts:
+        - name: www
+          mountPath: /usr/share/nginx/html
+  volumeClaimTemplates:
+  - metadata:
+      name: www
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  ports:
+  - port: 80
+    name: web
+  clusterIP: None
+  selector:
+    app: nginx
+
+
+====================HELM=============
+https://helm.sh/docs/intro/install/
+https://helm.sh/docs/intro/using_helm/
+
+
+							HELM 3
+========================================================================
+========================================================================						
+=========================================
+curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 > get_helm.sh
+chmod 700 get_helm.sh
+./get_helm.sh
+helm version
+helm
+helm help
+------------
+Common actions for Helm:
+
+- helm search:    search for charts
+- helm pull:      download a chart to your local directory to view
+- helm install:   upload the chart to Kubernetes
+- helm list:      list releases of charts
+-----------------
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+helm search repo stable
+helm repo update
+helm install stable/mysql --generate-name
+helm show chart stable/mysql
+helm show all stable/mysql
+helm ls
+helm list
+helm uninstall smiling-penguin
+helm rollback
+helm get -h
+
+
+  completion  Generate autocompletions script for the specified shell (bash or zsh)
+  create      create a new chart with the given name
+  dependency  manage a chart's dependencies
+  env         Helm client environment information
+  get         download extended information of a named release
+  help        Help about any command
+  history     fetch release history
+  install     install a chart
+  lint        examines a chart for possible issues
+  list        list releases
+  package     package a chart directory into a chart archive
+  plugin      install, list, or uninstall Helm plugins
+  pull        download a chart from a repository and (optionally) unpack it in local directory
+  repo        add, list, remove, update, and index chart repositories
+  rollback    roll back a release to a previous revision
+  search      search for a keyword in charts
+  show        show information of a chart
+  status      displays the status of the named release
+  template    locally render templates
+  test        run tests for a release
+  uninstall   uninstall a release
+  upgrade     upgrade a release
+  verify      verify that a chart at the given path has been signed and is valid
+  version     print the client version information
+
+
+
+
+
+
+
+========================
+RBAC
+Statefulsets
+Helm
+=
+
+nodes management 
+Ingess
+Anotations
+ETCD and HA
+
+==============================================================================
+Compute - 
+Storage - 
+Networking - 
+Security - 
+
+Monitoring
+    POD Monitoring
+    infra Monitoring using cadvisor-heapster
+    http://devopsschool.com/tutorial/kubernetes/kubernetes-pod-container-monitoring-with-cadvisor-heapster.html
+
+    Infra Monitoring
+    http://devopsschool.com/tutorial/kubernetes/kubernetes-monitoring-with-prometheus-grafana.html
+
+Logging
+    ELK
+    http://devopsschool.com/tutorial/kubernetes/kubernetes-monitoring-with-prometheus-grafana.html
+    http://devopsschool.com/tutorial/kubernetes/kubernetes-logging-with-elasticsearch-fluentd-kibana.html
+
+
+
+Image pull secret
+Certificate Manager 
+Registry
+Scanner
+helm repo
+encryption
+monitoring - 7-8
+istio service mesh
+discovery
+amsbassder
+
+
+
+How to reach out to me?
+http://rajeshkumar.xyz/
+
+
+How to find Kubernetes 
+        Slides?
+        https://www.devopsschool.com/slides
+        PDF
+        https://www.devopsschool.com/pdf
+        Tutorials 
+        https://www.devopsschool.com/tutorial/kubernetes/
+        Notes - github
+        Video
+        https://www.youtube.com/channel/UCrXr49kBvXJeQMMl2693c4g
+        Blogs
+        http://devopsschool.com/blog
+        QUIZ
+        https://www.devopsschool.com/lms
+        LABS
+        https://www.devopsschool.com/tutorial/kubernetes/labs/
+        Example programs
+            https://github.com/devops-school/
+            https://github.com/orgs/devopsschool-sample-projects/     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ERROR
+Taints:             node.kubernetes.io/unreachable:NoSchedule
+
+https://stackoverflow.com/questions/56614136/how-to-remove-kube-taints-from-worker-nodes-taints-node-kubernetes-io-unreachab
+https://stackoverflow.com/questions/56861796/what-happens-when-you-drain-nodes-in-a-kubernetes-cluster
+https://medium.com/@felipedutratine/when-you-try-to-drain-a-kubernetes-node-but-it-blocks-5aba9592d7c9
+
+Kubernetes Access Service located in another namespace
+
+Kubernetes Access Service located in another namespace or Map service to 
+
+Services of type ExternalName map a Service to a DNS name, not to a typical selector such as my-service or cassandra. You specify these Services with the spec.externalName parameter.
+
+This Service definition, for example, maps the my-service Service in the prod namespace to my.database.example.com:
+
+---------Security Policy to send  out in forms of Blog.---------
+
+ExternalName
+Services with type ExternalName work as other regular services, but when you want to access to that service name, instead of returning cluster-ip of this service, it returns CNAME record with value that mentioned in externalName:
+
+ExternalName service references to an external DNS address instead of only pods, which will allow
+application authors to reference services that exist off platform, on other clusters, or locally.
+
+kubectl create service externalname my-ns --external-name bar.com
+
+
+====
+What about if containers inside a pod is not responding. 
+=====
+Is there any way if Hostpath is used, next pod must be created in same host.
+====
+IF PV can be auto scale or increase dynamically?
+
+=====================================================
+Can i resize a PV?
+- YES
+
+Can i resize a PVC?
+- NO, only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize.
+
+error: persistentvolumeclaims "pvchostpath" could not be patched: persistentvolumeclaims "pvchostpath" is forbidden: only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize
+You can run `kubectl replace -f /tmp/kubectl-edit-2566r.yaml` to try this update again.
+
+How to resize pvc?
+if your Workload's Persistent Volume is almost full. How can you expand it? With Kubernetes 1.11 and above, this can now easily be done by just updating the Persistent Volume Claim storage specification.
+
+Only dynamically provisioned pvc can be resized and the storageclass that provisions the pvc must support resize.
+
+Reference
+https://dev.to/bzon/resizing-persistent-volumes-in-kubernetes-like-magic-4f96
+
+
+----
+Default secret is jwt token or what?
